@@ -25,17 +25,17 @@ const CrudCreate = () => {
                         <button className="close-button" onClick={() => setOpen(false)}>X</button>
                         <form onSubmit={handleSubmit(onSubmit)} className="form">
                             <h3>Email</h3>
-                            <input type="email" {...register("email")} />
+                            <input type="email" {...register("email")} required/>
                             <h3>Contraseña</h3>
-                            <input type="password" {...register("password")} />
+                            <input type="password" {...register("password")}  required/>
                             <h3>Nombre</h3>
-                            <input {...register("first_name")} type="text"/>
+                            <input {...register("first_name")} type="text" required/>
                             <h3>Apellido</h3>
-                            <input {...register("last_name")} type="text"/>
+                            <input {...register("last_name")} type="text" required/>
                             <h3>Cumpleaños</h3>
-                            <input type="date" {...register("birthday")} />
+                            <input type="date" {...register("birthday")} required/>
                             <h3>Imagen URL</h3>
-                            <input type="text" {...register("image_url")} />
+                            <input type="text" {...register("image_url")} required/>
                             <button type="submit">Submit</button>
                             <button onClick={() => setOpen(false)} type="close">Close</button>
                         </form>
