@@ -22,19 +22,19 @@ const CrudCreate = () => {
             {open && (
                 <div className="modal-overlay">
                     <div className="modal">
-                        <button className="close-button" onClick={() => setOpen(false)}>Cerrar</button>
+                        <button className="close-button" onClick={() => setOpen(false)}>X</button>
                         <form onSubmit={handleSubmit(onSubmit)} className="form">
                             <h3>Email</h3>
                             <input type="email" {...register("email")} />
-                            <h3>Password</h3>
+                            <h3>Contraseña</h3>
                             <input type="password" {...register("password")} />
-                            <h3>First Name</h3>
+                            <h3>Nombre</h3>
                             <input {...register("first_name")} type="text"/>
-                            <h3>Last Name</h3>
+                            <h3>Apellido</h3>
                             <input {...register("last_name")} type="text"/>
-                            <h3>Birthday</h3>
+                            <h3>Cumpleaños</h3>
                             <input type="date" {...register("birthday")} />
-                            <h3>Image URL</h3>
+                            <h3>Imagen URL</h3>
                             <input type="text" {...register("image_url")} />
                             <button type="submit">Submit</button>
                             <button onClick={() => setOpen(false)} type="close">Close</button>
