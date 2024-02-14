@@ -1,0 +1,90 @@
+/* CrudCreate.css */
+
+/* Estilos para el contenedor del formulario */
+.modal {
+    width: 400px; /* Ancho del contenedor */
+    height: 800px; /* Alto del contenedor */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    justify-content: center; /* Centrar los elementos verticalmente */
+    align-items: center; /* Centrar los elementos horizontalmente */
+}
+
+/* Estilos para el botón de enviar y el botón de cerrar */
+.form button[type="submit"],
+.form button[type="close"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para el botón de enviar */
+.form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px; /* Añadir margen superior para separarlo del botón de cerrar */
+}
+
+/* Estilos específicos para el botón de cerrar */
+.form button[type="close"] {
+    background-color: #ccc; /* Color de fondo similar al botón de enviar */
+    color: #333; /* Color de texto similar al botón de enviar */
+}
+
+    .crud-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .user-card {
+        width: calc(25% - 20px); /* El 20px es para el margen entre las tarjetas */
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+    
+    .user-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .user-card span {
+        font-weight: bold;
+    }
+    
+    .user-card button {
+        margin-right: 10px;
+        padding: 8px 16px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    .user-card button:hover {
+        background-color: #0056b3;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width: 850px) {
+        .modal {
+            width: 90%; /* Cambiar el ancho del contenedor */
+            height: auto; /* Cambiar la altura del contenedor */
+        }
+        
+        .user-card {
+            width: calc(100% - 20px); /* Cambiar el ancho de las tarjetas */
+        }
+    }
