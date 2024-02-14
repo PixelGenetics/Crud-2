@@ -45,19 +45,19 @@ const CrudGet = () => {
     
                     {openUserId === user.id && (
                         <div className="modal">
-                            <div className="modal-content">
+                            <form className="modal-content">
                                 <h2>Actualizar Usuario</h2>
                                 <label htmlFor="email">Nuevo email:</label>
-                                <input id="email" type="email" name="email" onChange={handleChange} />
+                                <input id="email" type="email" name="email" onChange={handleChange} required/>
                                 <label htmlFor="first_name">Nuevo Nombre:</label>
-                                <input id="first_name" type="text" name="first_name" onChange={handleChange} />
+                                <input id="first_name" type="text" name="first_name" onChange={handleChange} required/>
                                 <label htmlFor="last_name">Nuevo Apellido:</label>
-                                <input id="last_name" type="text" name="last_name" onChange={handleChange} />
+                                <input id="last_name" type="text" name="last_name" onChange={handleChange} required/>
                                 <label htmlFor="birthday">Nueva fecha de nacimiento:</label>
-                                <input id="birthday" type="date" name="birthday" onChange={handleChange} />
+                                <input id="birthday" type="date" name="birthday" onChange={handleChange}/>
                                 <button onClick={handleFormSubmit}>Actualizar</button>
                                 <button onClick={() => setOpenUserId(null)}>Cerrar</button>
-                            </div>
+                            </form>
                         </div>
                     )}
                 </div>
