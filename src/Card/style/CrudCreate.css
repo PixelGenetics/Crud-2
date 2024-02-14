@@ -34,7 +34,7 @@
     width: 400px; /* Ancho del contenedor */
     height: 800px; /* Alto del contenedor */
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex; /* Utilizar flexbox */
@@ -58,7 +58,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 /* Estilos para los campos del formulario */
